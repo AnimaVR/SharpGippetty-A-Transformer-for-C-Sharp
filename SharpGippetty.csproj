@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="_TransformerModel\EncoderLayer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="TensorFlow.Keras" Version="0.10.5" />
+    <PackageReference Include="TensorFlow.NET" Version="0.100.5" />
+  </ItemGroup>
+
+</Project>
